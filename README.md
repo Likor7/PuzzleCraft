@@ -20,8 +20,8 @@ To run this project, you'll need:
 1. Backend Setup
     Navigate to the back-end directory and run the Spring Boot application:
 
-        ```cd backend
-        mvn spring-boot:run```
+        cd backend
+        mvn spring-boot:run
 
     The backend server will start on http://localhost:8080.
 
@@ -29,9 +29,9 @@ To run this project, you'll need:
 
     Open a new terminal, navigate to the front-end directory, and start the React application:
 
-    ```cd frontend
-    npm install
-    npm start```
+           cd frontend
+           npm install
+           npm start
 
     The frontend application will be available at http://localhost:3000.
 
@@ -41,8 +41,8 @@ You can also run the entire application using Docker. This is a simpler approach
 
 1. Build backend for jar file
 
-    ```cd backend
-    mvn package```
+           cd backend
+           mvn package
 
 2. Build and Run with Docker Compose
 
