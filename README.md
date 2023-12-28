@@ -10,10 +10,10 @@ These instructions will get you a copy of the project up and running on your loc
 
 To run this project, you'll need:
 
-    * Java JDK 17
-    * Maven
-    * Node.js
-    * Docker (optional, for Docker-based setup)
+       - Java JDK 17
+       - Maven
+       - Node.js
+       - Docker (optional, for Docker-based setup)
 
 ### Running Locally
 
