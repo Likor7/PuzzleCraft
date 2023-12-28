@@ -19,7 +19,7 @@ target/
 *.iml
 *.ipr
 
-### NetBeans ###
+### NetBeans ###t
 /nbproject/private/
 /nbbuild/
 /dist/
@@ -32,6 +32,4 @@ build/
 ### VS Code ###
 .vscode/
 
-.static/
-.backend/static
-.backend/src/test/java/com/puzzlecraft/backend/static
+/static/

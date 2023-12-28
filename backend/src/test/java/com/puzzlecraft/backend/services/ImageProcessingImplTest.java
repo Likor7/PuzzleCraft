@@ -29,15 +29,12 @@ public class ImageProcessingImplTest {
 
     @Test
     void whenCalculatingPiecesHorizontal_thenCorrectValueIsReturned() {
-        // Arrange
         when(mockImage.getWidth()).thenReturn(400);
         when(mockImage.getHeight()).thenReturn(300);
         int totalPieces = 100;
 
-        // Act
         int piecesHorizontal = imageProcessingService.getPiecesHorizontal(mockImage, totalPieces);
 
-        // Assert
         assertTrue(piecesHorizontal > 0, "Pieces horizontal should be greater than 0");
     }
 

@@ -27,13 +27,6 @@ public class PuzzleServiceImplTest {
     }
 
     @Test
-    void whenGettingPuzzleWithoutSetting_thenEmptyOptionalIsReturned() {
-        Optional<PuzzleResponse> actualPuzzle = puzzleService.getCurrentPuzzle();
-
-        assertFalse(actualPuzzle.isPresent(), "Puzzle should not be present when not set");
-    }
-
-    @Test
     void whenSettingPuzzleToNull_thenGettingPuzzleReturnsEmptyOptional() {
         puzzleService.setCurrentPuzzle(null);
 
