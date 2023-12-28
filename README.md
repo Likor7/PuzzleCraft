@@ -2,6 +2,16 @@
 
 PuzzleCraft is a web-based puzzle game where users can upload an image and solve it as a jigsaw puzzle.
 
+
+## Note
+
+I have tried to create an algorithm for automatic puzzle solving, but I am still studying this topic.
+
+I share the sources I use for this purpose:
+
+[CrisJim231AProject](https://web.stanford.edu/class/cs231a/prev_projects_2016/CrisJim231AProject.pdf)
+[Automatic assembly of jigsaw puzzles from digital images](https://dspace.cuni.cz/bitstream/handle/20.500.11956/38619/BPTX_2010_1__0_259272_0_96732.pdf?sequence=1&isAllowed=y)
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.

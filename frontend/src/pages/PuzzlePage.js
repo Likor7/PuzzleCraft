@@ -156,6 +156,10 @@ const PuzzlePage = () => {
         window.location.reload();
     };
 
+    const handleAutoSolve = () => {
+        console.log("Automatically assembling...");
+    };
+
     return (
         <div className="puzzle-page">
             <div className="puzzle-board" style={{
@@ -207,6 +211,7 @@ const PuzzlePage = () => {
                 <button onClick={stopGame} disabled={!isGameActive}>Stop</button>
                 <button onClick={handleReset}>Reset</button>
                 <button onClick={toggleShowOriginal}>{showOriginal ? 'Hide' : 'Show'} Original</button>
+                <button onClick={handleAutoSolve}>Automatically</button>
             </div>
 
             <div className="puzzle-pieces"
