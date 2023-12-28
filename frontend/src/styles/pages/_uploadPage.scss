@@ -1,0 +1,189 @@
+.upload-page-background {
+    background-color: $color-primary;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 200 200'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='100' y1='33' x2='100' y2='-3'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='100' y1='135' x2='100' y2='97'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='%23a8a4cc' fill-opacity='0.6'%3E%3Crect x='100' width='100' height='100'/%3E%3Crect y='100' width='100' height='100'/%3E%3C/g%3E%3Cg fill-opacity='0.5'%3E%3Cpolygon fill='url(%23a)' points='100 30 0 0 200 0'/%3E%3Cpolygon fill='url(%23b)' points='100 100 0 130 0 100 200 100 200 130'/%3E%3C/g%3E%3C/svg%3E");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    flex: 1;
+    flex-direction: column;
+
+    .upload-form-container {
+        display: flex;
+        padding: 20px;
+        border: 1px solid $color-lighter;
+        border-radius: 8px;
+        max-width: 400px;
+        margin: auto;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        background-color: rgba(255, 255, 255, 0.9);
+
+        .custom-upload {
+            margin-bottom: 0.8em;
+
+            .file-info,
+            .upload-instructions {
+                text-align: center;
+            }
+
+            .form-input {
+                width: 0.1px;
+                height: 0.1px;
+                opacity: 0;
+                overflow: hidden;
+                position: absolute;
+                z-index: -1;
+            }
+
+            .custom-upload-label {
+                max-width: 600px;
+                display: inline-block;
+                padding: 20px;
+                margin: auto;
+                border: 2px dashed #ccc;
+                border-radius: 10px;
+                text-align: center;
+                cursor: pointer;
+                background-color: rgba(255, 255, 255, 0.9);
+                box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+
+                &:hover {
+                    background-color: rgba(255, 255, 255, 1);
+                }
+
+                p {
+                    margin: 10px 0 5px;
+                    font-size: 16px;
+                    color: #333;
+                }
+
+                small {
+                    font-size: 12px;
+                    color: #666;
+                }
+            }
+
+            .file-info {
+                p {
+                    font-weight: bold;
+                    color: #333;
+                }
+
+                small {
+                    display: block;
+                    margin-top: 5px;
+                    color: #666;
+                    font-size: 0.8rem;
+                    cursor: pointer;
+                }
+            }
+
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .form-wh {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1em;
+
+
+        }
+
+        .form-input {
+            border: 1px solid $color-border-input;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .input-range {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 100%;
+            background: transparent;
+            outline: none;
+            margin-block: 0.5rem;
+
+            &::-webkit-slider-runnable-track {
+                background: $color-secondary-darker;
+                height: 0.3rem;
+                border-radius: 5px;
+            }
+
+            &::-moz-range-track {
+                background: $color-secondary-darker;
+                height: 0.3rem;
+                border-radius: 5px;
+            }
+
+            &::-ms-track {
+                background: $color-secondary-darker;
+                height: 0.3rem;
+                border-radius: 5px;
+                border: none;
+                color: transparent;
+            }
+
+            &::-webkit-slider-thumb {
+                -webkit-appearance: none;
+                appearance: none;
+                background: $color-secondary;
+                height: 16px;
+                width: 16px;
+                border-radius: 50%;
+                margin-top: -0.4rem;
+                cursor: pointer;
+            }
+
+            &::-moz-range-thumb {
+                background: $color-primary;
+                height: 16px;
+                width: 16px;
+                border-radius: 50%;
+                cursor: pointer;
+            }
+
+            &::-ms-thumb {
+                background: $color-secondary;
+                height: 16px;
+                width: 16px;
+                border-radius: 50%;
+                cursor: pointer;
+            }
+
+            &:focus {
+                outline: none;
+            }
+
+            &::-ms-fill-lower {
+                background: transparent;
+            }
+
+            &::-ms-fill-upper {
+                background: transparent;
+            }
+        }
+
+
+        .submit-button {
+            padding: 0.7em;
+            background-color: $color-secondary;
+            color: $color-white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+
+            &:hover {
+                background-color: $color-secondary-darker;
+            }
+        }
+    }
+
+}

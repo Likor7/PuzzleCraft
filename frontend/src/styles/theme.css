@@ -1,0 +1,407 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+html {
+  overflow-x: hidden;
+  font-size: 16px;
+}
+@media (max-width: 1068px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+body {
+  overflow-x: hidden;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+::-moz-selection {
+  /* Code for Firefox */
+  color: white;
+  background: #C9C5EE;
+}
+
+::selection {
+  color: white;
+  background: #C9C5EE;
+}
+
+body {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: black;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  line-height: 1.25;
+  font-weight: 600;
+  color: rgb(51, 51, 51);
+}
+
+h1,
+.h1 {
+  font-size: 3rem;
+}
+
+h2,
+.h2 {
+  font-size: 2.5rem;
+}
+
+h3,
+.h3 {
+  font-size: 2rem;
+}
+
+h4,
+.h4 {
+  font-size: 1.5rem;
+}
+
+h5,
+.h5 {
+  font-size: 1.25rem;
+}
+
+h6,
+.h6 {
+  font-size: 1rem;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.upload-page-background {
+  background-color: #C9C5EE;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 200 200'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='100' y1='33' x2='100' y2='-3'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='100' y1='135' x2='100' y2='97'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='%23a8a4cc' fill-opacity='0.6'%3E%3Crect x='100' width='100' height='100'/%3E%3Crect y='100' width='100' height='100'/%3E%3C/g%3E%3Cg fill-opacity='0.5'%3E%3Cpolygon fill='url(%23a)' points='100 30 0 0 200 0'/%3E%3Cpolygon fill='url(%23b)' points='100 100 0 130 0 100 200 100 200 130'/%3E%3C/g%3E%3C/svg%3E");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  flex: 1;
+  flex-direction: column;
+}
+.upload-page-background .upload-form-container {
+  display: flex;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  max-width: 400px;
+  margin: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.9);
+}
+.upload-page-background .upload-form-container .custom-upload {
+  margin-bottom: 0.8em;
+}
+.upload-page-background .upload-form-container .custom-upload .file-info,
+.upload-page-background .upload-form-container .custom-upload .upload-instructions {
+  text-align: center;
+}
+.upload-page-background .upload-form-container .custom-upload .form-input {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+.upload-page-background .upload-form-container .custom-upload .custom-upload-label {
+  max-width: 600px;
+  display: inline-block;
+  padding: 20px;
+  margin: auto;
+  border: 2px dashed #ccc;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+}
+.upload-page-background .upload-form-container .custom-upload .custom-upload-label:hover {
+  background-color: rgb(255, 255, 255);
+}
+.upload-page-background .upload-form-container .custom-upload .custom-upload-label p {
+  margin: 10px 0 5px;
+  font-size: 16px;
+  color: #333;
+}
+.upload-page-background .upload-form-container .custom-upload .custom-upload-label small {
+  font-size: 12px;
+  color: #666;
+}
+.upload-page-background .upload-form-container .custom-upload .file-info p {
+  font-weight: bold;
+  color: #333;
+}
+.upload-page-background .upload-form-container .custom-upload .file-info small {
+  display: block;
+  margin-top: 5px;
+  color: #666;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+.upload-page-background .upload-form-container form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.upload-page-background .upload-form-container .form-wh {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1em;
+}
+.upload-page-background .upload-form-container .form-input {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.upload-page-background .upload-form-container .input-range {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  width: 100%;
+  background: transparent;
+  outline: none;
+  margin-block: 0.5rem;
+}
+.upload-page-background .upload-form-container .input-range::-webkit-slider-runnable-track {
+  background: #756eae;
+  height: 0.3rem;
+  border-radius: 5px;
+}
+.upload-page-background .upload-form-container .input-range::-moz-range-track {
+  background: #756eae;
+  height: 0.3rem;
+  border-radius: 5px;
+}
+.upload-page-background .upload-form-container .input-range::-ms-track {
+  background: #756eae;
+  height: 0.3rem;
+  border-radius: 5px;
+  border: none;
+  color: transparent;
+}
+.upload-page-background .upload-form-container .input-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  background: #9c93eb;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  margin-top: -0.4rem;
+  cursor: pointer;
+}
+.upload-page-background .upload-form-container .input-range::-moz-range-thumb {
+  background: #C9C5EE;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.upload-page-background .upload-form-container .input-range::-ms-thumb {
+  background: #9c93eb;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.upload-page-background .upload-form-container .input-range:focus {
+  outline: none;
+}
+.upload-page-background .upload-form-container .input-range::-ms-fill-lower {
+  background: transparent;
+}
+.upload-page-background .upload-form-container .input-range::-ms-fill-upper {
+  background: transparent;
+}
+.upload-page-background .upload-form-container .submit-button {
+  padding: 0.7em;
+  background-color: #9c93eb;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.upload-page-background .upload-form-container .submit-button:hover {
+  background-color: #756eae;
+}
+
+.puzzle-page {
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+  gap: 1em;
+  align-items: center;
+  width: 100vw;
+  flex: 1;
+  flex-direction: column;
+}
+.puzzle-page .puzzle-board {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  border: 1px solid #ccc;
+}
+.puzzle-page .puzzle-board .puzzle-slot {
+  border: 0px dashed #ccc;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.puzzle-page .puzzle-board .puzzle-slot.is-empty::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1em;
+  height: 1em;
+  background-color: #9c93eb;
+  border-radius: 50%;
+  opacity: 0.8;
+  transform: translate(-50%, -50%);
+}
+.puzzle-page .puzzle-board .original-image {
+  max-width: 100%;
+  max-height: 100%;
+}
+.puzzle-page .puzzle-pieces {
+  width: 90%;
+  min-height: 10vh;
+  overflow-x: auto;
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1em;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 1em;
+  padding: 0.5em 0.9em;
+}
+.puzzle-page .puzzle-pieces .drag-back-message {
+  color: rgb(51, 51, 51);
+}
+.puzzle-page .puzzle-pieces .puzzle-piece {
+  width: auto;
+  border: 0.1rem solid black;
+  background-color: white;
+  cursor: grab;
+}
+.puzzle-page .puzzle-pieces .puzzle-piece:active {
+  cursor: grabbing;
+}
+.puzzle-page .puzzle-pieces .puzzle-piece.dragging {
+  opacity: 0.5;
+}
+.puzzle-page .puzzle-slot,
+.puzzle-page .puzzle-piece {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.puzzle-page .puzzle-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  padding: 0.5em;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.puzzle-page .puzzle-controls button {
+  padding: 0.5em 1em;
+  font-size: 1rem;
+  color: white;
+  background-color: #9c93eb;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.puzzle-page .puzzle-controls button:hover {
+  background-color: #756eae;
+}
+.puzzle-page .puzzle-controls button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+.puzzle-page .puzzle-controls span {
+  font-size: 1.2rem;
+}
+
+.app-header {
+  background-color: #C9C5EE;
+  padding: 0.2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: "Poppins", sans-serif;
+}
+.app-header .header-nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+.app-header .header-nav-list li {
+  display: flex;
+  align-items: center;
+  margin: 0 1rem;
+}
+.app-header .header-nav-list li a {
+  text-decoration: none;
+  color: rgb(51, 51, 51);
+}
+.app-header .header-nav-list li a:hover {
+  text-decoration: underline;
+  color: #756eae;
+}
+.app-header .header-nav-list li .logo-img {
+  width: 5em;
+  aspect-ratio: 1/1;
+}
+
+.app-footer {
+  background-color: #C9C5EE;
+  color: black;
+  text-align: center;
+  padding: 1rem;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+}
+.app-footer p {
+  margin: 0;
+  color: rgb(51, 51, 51);
+}/*# sourceMappingURL=theme.css.map */

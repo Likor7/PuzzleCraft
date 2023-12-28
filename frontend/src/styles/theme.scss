@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+// Base
+@import "base/variables";
+@import "base/mixins";
+@import "base/layouts";
+@import "base/typography";
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+// Pages
+@import "pages/uploadPage";
+@import "pages/puzzlePage";
+
+// Components
+@import "components/header";
+@import "components/footer";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');

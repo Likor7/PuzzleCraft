@@ -1,0 +1,29 @@
+html {
+    overflow-x: hidden;
+    font-size: 16px;
+
+    @media (max-width:1068px) {
+        font-size: 14px;
+    }
+}
+
+body {
+    overflow-x: hidden;
+    position: relative;
+    font-family: $font-family;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+::-moz-selection {
+    /* Code for Firefox */
+    color: white;
+    background: $color-primary;
+}
+
+::selection {
+    color: white;
+    background: $color-primary;
+}

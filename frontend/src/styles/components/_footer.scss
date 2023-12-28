@@ -1,0 +1,15 @@
+.app-footer {
+    background-color: $color-primary;
+    color: $color-black;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-family: $font-family;
+
+    p {
+        margin: 0;
+        color: $color-text-heading;
+    }
+}
